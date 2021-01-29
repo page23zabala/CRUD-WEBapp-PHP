@@ -17,18 +17,16 @@
 	<title>Homepage</title>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-	<style>
-		body {
-  			background-image: url('bg.jpg');
-  			background-size: cover;
-  			background-repeat: no-repeat;
-  			background-attachment: fixed;
-		}
-	</style>
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
 </head>
 <body>
-	<h1 style="color: #ff1493"><?php echo "My CRUD Php WEB Application"; ?></h1>
-	<a href="add.html">Add new Data</a><br/><br/>
+	<header>
+  <div class="title">
+    <h1><?php echo "CRUD WEB APP"; ?></h1><br/>
+
+  </div>
+</header>
+	<a href="add.html">Add Country</a>
 
 	<table class="table table-dark table-striped" style="color: #ff1493" >
 		<tr background="bg.jpg">
