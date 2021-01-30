@@ -1,11 +1,7 @@
-<?php 
-	$dbhost = 'localhost';
-	$dbname = 'countries';
-	$dbuser = 'root';
-	$dbpass = '';
-	$conn = mysqli_connect($dbhost,$dbuser,$dbpass,$dbname);
+<?php
+	include_once("config.php");
 
-	$result = mysqli_query($conn, "SELECT * FROM country");
+	$result = mysqli_query($mysqli, "SELECT * FROM country");
 
 ?>
 
@@ -37,6 +33,7 @@
 			<td>Num Code </td>
 			<td>Phone Code </td>
 			<td>Created</td>
+			<td>Action</td>
 		</tr>
 
 		<?php 
@@ -50,6 +47,7 @@
 				echo "<td>".$res['numcode']."</td>";
 				echo "<td>".$res['phonecode']."</td>";
 				echo "<td>".$res['created_at']."</td>";
+				echo "<td><a href=\"edit.php?id=$res[id]\">Edit</a>";
 				echo "</tr>";
 			}
 		?>
