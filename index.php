@@ -1,4 +1,15 @@
 <?php
+
+  //initialize session
+  session_start();
+
+  if( !isset($_SESSION['email']) || empty($_SESSION['email'])){
+    header('location: login.php');
+    exit;
+  }
+?>
+
+<?php
 	include_once("config.php");
 
 	$result = mysqli_query($mysqli, "SELECT * FROM country");
@@ -18,8 +29,8 @@
 <body>
 	<header>
   <div class="title">
-    <h1><?php echo "CRUD WEB APP"; ?></h1><br/>
-
+    <h1><?php echo "CRUD WEB APP"; ?></h1>
+	<h5><a href="logout.php" class="aaa">Logout</a></h5>
   </div>
 </header>
 	<a href="add.html">Add Country</a>
