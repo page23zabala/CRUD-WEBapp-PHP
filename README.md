@@ -2,7 +2,7 @@
 
 IT11 Final Activity 7
 
-INSTALLATION INSTRUCTION
+INSTALLATION INSTRUCTION <br/>
 to run this app, first you need to have a WAMP server. you can download it here >>> https://www.wampserver.com/en/
 then install it, then run the server to have an access to the localhost.
 then you need to make a database to have a data storage.
